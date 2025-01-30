@@ -1,21 +1,14 @@
 
-<table>
-  <tr>
-    <th>1.Variables</th>
-    <th>2.Primitives</th>
-    <th>3.Arrays</th>
-    <th>4.objects</th>
-    <th>5.Asynchronous</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-</table>
+| S.no   | Topics      |                  
+| 1      | <a href="#Var">**Variables**</a> |
+| 2      | <a href="#Pri">**Primitives**</a> | 
+| 3      | <a href="#Array">**Arrays**</a> | 
+| 4      | <a href="#Obj">**Objects**</a> | 
+| 5      | <a href="#Fun">**Function**</a> |
+| 6      | <a href="#Asy">**Asynchronous**</a> |
 
-**Variables:**
-==========
+<h3 id="#Var">**Variables**</h3>
+
 **1) Explain the difference between let, const, and var?**
 
 Here’s an explanation of the differences between `let`, `const`, and `var` in JavaScript, summarized in a table with examples.
