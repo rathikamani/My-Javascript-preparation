@@ -113,7 +113,18 @@ let colors = ["red", "green", "blue"];
  
 console.log(typeof user); // "object"
 console.log(typeof colors); // "object" (arrays are objects)
-Notes
+
+
+<h3 id="Pri">Pri</h3>
+
+
+
+
+
+
+
+
+
 
 Both arrays and objects are identified as "object" type in JavaScript.
 
