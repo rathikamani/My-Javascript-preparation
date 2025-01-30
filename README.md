@@ -7,18 +7,22 @@
         </tr>
         <tr>
             <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <td><a href="#Var">**Variables**</a></td>
         </tr>
         <tr>
-            <td><a href="#Var">**Variables**</a></td>
+            <td>2</td>
             <td><a href="#Pri">**Primitives**</a></td>
-            <td><a href="#Array">**Arrays**</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
             <td><a href="#Obj">**Objects**</a></td>
-            <td><a href="#Fun">**Function**</a></td>
+        </tr>
+        <tr>
+        <td>4</td>
+        <td><a href="#Fun">**Function**</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
             <td><a href="#Asy">**Asynchronous**</a></td>
         </tr>
     </table>
