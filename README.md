@@ -1,12 +1,27 @@
 
-| S.no   | Topics      |                  
-| 1      | <a href="#Var">**Variables**</a> |
-| 2      | <a href="#Pri">**Primitives**</a> | 
-| 3      | <a href="#Array">**Arrays**</a> | 
-| 4      | <a href="#Obj">**Objects**</a> | 
-| 5      | <a href="#Fun">**Function**</a> |
-| 6      | <a href="#Asy">**Asynchronous**</a> |
 
+<table border="3">
+        <tr>
+            <th>S.no</th>
+            <th>Topics</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><a href="#Var">**Variables**</a></td>
+            <td><a href="#Pri">**Primitives**</a></td>
+            <td><a href="#Array">**Arrays**</a></td>
+            <td><a href="#Obj">**Objects**</a></td>
+            <td><a href="#Fun">**Function**</a></td>
+            <td><a href="#Asy">**Asynchronous**</a></td>
+        </tr>
+    </table>
 <h3 id="#Var">**Variables**</h3>
 
 **1) Explain the difference between let, const, and var?**
