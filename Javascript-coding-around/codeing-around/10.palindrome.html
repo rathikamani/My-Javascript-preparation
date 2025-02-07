@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function isPalindrome(str) {
+                str = str.toLowerCase(); // Convert to lowercase to handle case sensitivity
+                let reversedStr = str.split("").reverse().join(""); // Reverse the string
+                return str === reversedStr;
+            }
+
+            let word = "Anna";
+            console.log(`Is "${word}" a palindrome?`, isPalindrome(word));
+        </script>
+    </head>
+    <body>
+        <h1>isPalindrome</h1>
+    </body>
+</html>

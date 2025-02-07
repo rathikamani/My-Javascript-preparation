@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script>
+        function isPrime(num) {
+            // Numbers less than 2 are not prime
+            if (num < 2) return false;
+
+            // Check divisibility from 2 to the square root of num
+            for (let i = 2; i * i <= num; i++) {
+                if (num % i === 0) {
+                    return false; // If num is divisible by i, it's not prime
+                }
+            }
+
+            return true; // If no divisor found, num is prime
+        }
+
+        // Example usage:
+        console.log(isPrime(2));   // true
+        console.log(isPrime(17));  // true
+        console.log(isPrime(18));  // false
+        console.log(isPrime(29));  // true
+        console.log(isPrime(1));   // false
+    </script>
+</head>
+
+<body>
+    <h1>Prime number</h1>
+</body>
+
+</html>

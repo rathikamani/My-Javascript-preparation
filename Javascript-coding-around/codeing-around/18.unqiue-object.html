@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script>
+        function getUniqueObjects(arr) {
+            let uniqueMap = new Map();
+
+            for (let obj of arr) {
+                uniqueMap.set(obj.name, obj); // Map stores only unique keys
+            }
+
+            return Array.from(uniqueMap.values()); // Convert Map values back to an array
+        }
+
+        let inputArray = [
+            { name: "sai" },
+            { name: "Nang" },
+            { name: "sai" },
+            { name: "Nang" },
+            { name: "111111" }
+        ];
+
+        console.log(getUniqueObjects(inputArray));
+    </script>
+</head>
+
+<body>
+    <h1>GetUniqueObjects</h1>
+</body>
+
+</html>

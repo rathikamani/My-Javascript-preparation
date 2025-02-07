@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script>
+        function findMax(arr) {
+            let max = arr[0]; // Assume the first element is the largest
+
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i]; // Update max if a larger value is found
+                }
+            }
+
+            return max;
+        }
+
+        let numbers = [10, 24, 3, 45, 99, 7];
+        console.log("Maximum Number:", findMax(numbers)); // Output: 99
+    </script>
+</head>
+
+<body>
+    <h1>Maximum Number</h1>
+</body>
+
+</html>

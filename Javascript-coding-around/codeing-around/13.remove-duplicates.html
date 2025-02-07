@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <script>
+        function removeDuplicates(arr) {
+            let uniqueArr = []; // Initialize an empty array to store unique values
+
+            for (let i = 0; i < arr.length; i++) {
+                let isDuplicate = false;
+
+                // Check if the element already exists in uniqueArr
+                for (let j = 0; j < uniqueArr.length; j++) {
+                    if (arr[i] === uniqueArr[j]) {
+                        isDuplicate = true;
+                        break; // Exit inner loop if duplicate is found
+                    }
+                }
+
+                // If not a duplicate, add it to uniqueArr
+                if (!isDuplicate) {
+                    uniqueArr.push(arr[i]);
+                }
+            }
+
+            return uniqueArr;
+        }
+
+        let numbers = [1, 2, 3, 2, 4, 5];
+        console.log("Array without duplicates:", removeDuplicates(numbers));
+    </script>
+</head>
+
+<body>
+    <h5>removeDuplicates</h5>
+</body>
+
+</html>

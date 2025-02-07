@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <script>
+        function stringToObject(path, value) {
+            let keys = path.split("."); // Split the string into an array of keys
+            let obj = {}; // Initialize an empty object
+            let temp = obj; // Temporary reference to modify the object
+
+            for (let i = 0; i < keys.length - 1; i++) {
+                temp[keys[i]] = {}; // Create nested objects
+                temp = temp[keys[i]]; // Move deeper
+            }
+
+            // Assign the final value to the last key
+            temp[keys[keys.length - 1]] = value;
+
+            return obj;
+        }
+
+        // Example usage:
+        console.log(stringToObject("a.b.c", "someValue"));
+
+    </script>
+</head>
+
+<body>
+    <h1>Converts string input an object</h1>
+</body>
+
+</html>

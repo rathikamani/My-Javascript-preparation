@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <script>
+function sameFrequency(arr1, arr2) {
+    if (arr1.length !== arr2.length) return false; // Lengths must be equal
+
+    let frequencyCounter1 = {};
+    let frequencyCounter2 = {};
+
+    // Count frequency of values in arr1
+    for (let num of arr1) {
+        frequencyCounter1[num] = (frequencyCounter1[num] || 0) + 1;
+    }
+
+    // Count frequency of values in arr2
+    for (let num of arr2) {
+        frequencyCounter2[num] = (frequencyCounter2[num] || 0) + 1;
+    }
+
+    // Compare frequency of squared values
+    for (let key in frequencyCounter1) {
+        let squaredKey = key ** 2;
+        if (!(squaredKey in frequencyCounter2)) return false; // Squared value must exist
+        if (frequencyCounter2[squaredKey] !== frequencyCounter1[key]) return false; // Frequency must match
+    }
+
+    return true;
+}
+
+// Example usage:
+let arr1 = [1, 2, 3, 2];
+let arr2 = [4, 9, 1, 4];
+
+console.log(sameFrequency(arr1, arr2)); // Output: true
+
+function sameFrequency(arr1, arr2) {
+    return arr1.map(num => num ** 2).sort().toString() === arr2.sort().toString();
+}
+
+// Example usage:
+console.log(sameFrequency([1, 2, 3, 2], [4, 9, 1, 4])); // true
+console.log(sameFrequency([1, 2, 3], [1, 4, 9])); // true
+console.log(sameFrequency([1, 2, 3], [1, 4, 8])); // false
+
+    </script>
+</head>
+
+<body>
+<h1>
+    Squared array
+</h1>
+<div>
+    Explanation:
+Check array lengths – If they don’t match, return false.
+Create frequency counters for both arrays:
+frequencyCounter1 stores the count of elements in arr1.
+frequencyCounter2 stores the count of elements in arr2.
+Compare frequencies:
+Ensure each value in arr1 has its square in arr2.
+Ensure the squared values appear the same number of times.
+Return true or false based on the comparison.
+</div>
+<div>
+    2)
+    Square each element in arr1 using .map(num => num ** 2).
+Sort both arrays so they can be compared directly.
+Convert them to strings and check if they are equal.
+</div>
+</body>
+
+</html>
