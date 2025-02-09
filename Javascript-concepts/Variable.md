@@ -1,8 +1,10 @@
 
-1) How does hoisting work in JavaScript?
+
+**1) How does hoisting work in JavaScript?**
 
 **Hoisting** is a behavior in JavaScript where variable, function, or class declarations are moved to the top of their scope (global or function) during the **compile phase** before the code is executed. This allows you to reference variables and functions before they are declared in the code.
 However, **only declarations are hoisted**, not initializations. Let’s break it down with examples.
+
 **How Hoisting Works**
 1. **Variable Hoisting**
    - For `var`, the variable is hoisted and initialized as `undefined`.
@@ -14,6 +16,7 @@ However, **only declarations are hoisted**, not initializations. Let’s break i
 
 3. **Class Hoisting**
    - Classes are hoisted but are not initialized, resulting in a `ReferenceError` if accessed before their declaration.
+   - 
 #### **Hoisting with `var`**
 ```javascript
 console.log(x); 
@@ -29,6 +32,7 @@ console.log(z); // ReferenceError: Cannot access 'z' before initialization
 const z = 30;
 ```
 Both `let` and `const` are hoisted, but they remain in the **Temporal Dead Zone** (TDZ) from the start of the block until the declaration is executed.
+
 #### **Function Hoisting**
 ```javascript
 foo(); // Works! Outputs: "Hello, world!"
@@ -56,6 +60,7 @@ class MyClass {
   }
 }
 Classes are hoisted but not initialized, similar to `let` and `const`.
+
 ### **Key Takeaways**
 
 1. **`var`**:
@@ -71,6 +76,7 @@ Classes are hoisted but not initialized, similar to `let` and `const`.
 
 4. **Classes**:
    - Hoisted, but not initialized.
+
 ### **Visualizing Hoisting**
 Here’s an example to summarize:
 
@@ -92,9 +98,11 @@ greet(); // Hi!
 
 https://www.youtube.com/watch?v=06093vaHgtg
 
-** 2) Describe the concept of closures **
+**2) Describe the concept of closures**
 A closure in JavaScript is a fundamental concept where a function retains access to its lexical scope, even when the function is executed outside that scope. This means that a closure gives you access to an outer function's scope from an inner function.
+
 Example of a Closure
+
 ```javascript
 function outsideFunction(outerVar) {
   const outerVariable = outerVar
