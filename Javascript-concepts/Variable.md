@@ -213,10 +213,15 @@ Output:
 Let me know if you want a diagram or further clarification! 😊
 
 **4.What is the difference between == and ===?**
+
 **5.How do you check the type of a variable in JavaScript?**
+
 **6.What is the use of the this keyword in JavaScript?**
+
 **7.High-Order functions?**
+
 **8.call apply bind?**
+
 **9.Currying?**
 
 Currying in JavaScript is a technique the transforms a function with multiple arguments into a 
