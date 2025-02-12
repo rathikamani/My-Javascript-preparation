@@ -245,9 +245,11 @@ Evaluate(‘mul’)(4)(2) => 6
 Evaluate(‘div’)(4)(2) => 6
 ```
 **10.Event bubbling and capturing?**
+
    When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on the other ancestors.
 Event capturing is opposite to the event bubbling, in the event capturing the flow goes from outermost element to the target element.
 Ex:
+
 **Event bubbling:**
 <div class=”Parents”>
 Parent
@@ -255,6 +257,7 @@ Parent
 Child
 </div>
 </div>
+
 ```javascript
 
 document.queryselector(‘.parents’).addEventListener(‘click’,()=>{
@@ -272,6 +275,7 @@ Output:
 **Event capturing:**
 
 **11.Event delegation?**
+
 **12.Debouncing and throttling?**
 Debouncing and throttling are techniques used to control the rate at which a function is executed, particularly in scenarios where a function is triggered repeatedly in quick succession (e.g., scrolling, resizing, typing).
 
