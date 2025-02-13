@@ -344,9 +344,8 @@ let b = 5;
 sum(a,b,square);
 ```
 
-**8.call apply bind?**
 
-**9.Currying?**
+**8.Currying?**
 
 Currying in JavaScript is a technique the transforms a function with multiple arguments into a 
 Sequence of functions, each taking a single argument.
@@ -368,7 +367,7 @@ Evaluate(‘sub’)(4)(2) => 6
 Evaluate(‘mul’)(4)(2) => 6
 Evaluate(‘div’)(4)(2) => 6
 ```
-**10.Event bubbling and capturing?**
+**9.Event bubbling and capturing?**
 
    When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on the other ancestors.
 Event capturing is opposite to the event bubbling, in the event capturing the flow goes from outermost element to the target element.
@@ -398,9 +397,9 @@ Output:
 
 **Event capturing:**
 
-**11.Event delegation?**
+**10.Event delegation?**
 
-**12.Debouncing and throttling?**
+**11.Debouncing and throttling?**
 Debouncing and throttling are techniques used to control the rate at which a function is executed, particularly in scenarios where a function is triggered repeatedly in quick succession (e.g., scrolling, resizing, typing).
 
 **1. Debouncing**
@@ -479,5 +478,5 @@ const throttledClick = throttle(debouncedClick, 1000);
 document.getElementById('myButton').addEventListener('click', throttledClick);
 ```
 
-**13.Pure and Impure Functions?**
-**14.Factory Function?**
+**12.Pure and Impure Functions?**
+**13.Factory Function?**
