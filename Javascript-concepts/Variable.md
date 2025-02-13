@@ -216,9 +216,133 @@ Let me know if you want a diagram or further clarification! 😊
 
 **5.How do you check the type of a variable in JavaScript?**
 
+``` javascript
+let name = "John";
+console.log(typeof name); // "string"
+
+let age = 25;
+console.log(typeof age); // "number"
+
+let isStudent = true;
+console.log(typeof isStudent); // "boolean"
+
+let user = { name: "Alice", age: 30 };
+console.log(typeof user); // "object"
+
+let numbers = [1, 2, 3];
+console.log(typeof numbers); // "object" (arrays are objects)
+
+let func = function() {};
+console.log(typeof func); // "function"
+
+let notDefined;
+console.log(typeof notDefined); // "undefined"
+
+let emptyValue = null;
+console.log(typeof emptyValue); // "object" (historical JavaScript bug)
+````
+
+
 **6.What is the use of the this keyword in JavaScript?**
+In JavaScript, the `this` keyword refers to the object that is executing the current function. Its value depends on how and where the function is called. Here are different use cases:
+
+### 1. **Global Context (or in Regular Functions)**
+In the global execution context, `this` refers to the **global object** (`window` in browsers, `global` in Node.js).
+```javascript
+console.log(this); // In browsers, it logs the `window` object
+```
+
+### 2. **Inside an Object Method**
+When used inside an object method, `this` refers to the object itself.
+```javascript
+const user = {
+  name: "Alice",
+  greet: function() {
+    console.log(this.name); // "Alice"
+  }
+};
+user.greet();
+```
+
+### 3. **Inside a Constructor Function**
+In constructor functions, `this` refers to the new object being created.
+```javascript
+function Person(name) {
+  this.name = name;
+}
+const person1 = new Person("John");
+console.log(person1.name); // "John"
+```
+
+### 4. **Arrow Functions**
+Arrow functions do **not** have their own `this`; they inherit `this` from the surrounding lexical scope.
+```javascript
+const user = {
+  name: "Bob",
+  greet: () => {
+    console.log(this.name); // `this` refers to the outer scope, likely `window`, so it logs `undefined`
+  }
+};
+user.greet();
+```
+
+### 5. **Inside Event Listeners**
+In event listeners, `this` usually refers to the element that fired the event.
+```javascript
+document.querySelector("button").addEventListener("click", function() {
+  console.log(this); // Refers to the button element
+});
+```
+
+### 6. **Explicitly Setting `this` (call, apply, bind)**
+You can manually set `this` using `call`, `apply`, or `bind`.
+
+#### `call` and `apply`
+```javascript
+function greet() {
+  console.log(this.name);
+}
+const user = { name: "Eve" };
+greet.call(user); // "Eve"
+greet.apply(user); // "Eve"
+```
+
+#### `bind`
+```javascript
+const greetUser = greet.bind(user);
+greetUser(); // "Eve"
+```
+
+### Summary
+- `this` depends on how the function is called.
+- In an object method, `this` refers to the object.
+- In a constructor, `this` refers to the new instance.
+- Arrow functions don’t have their own `this`.
+- `call`, `apply`, and `bind` can set `this` explicitly.
+
+
 
 **7.High-Order functions?**
+
+A higher-order function is a function that either:
+
+Takes another function as an argument, or
+Returns a function.
+
+``` javascript
+function sum(a,b,next){
+sum1 = a + b;
+console.log(next(sum1));
+}
+
+function square(n){
+   return n + 1;
+}
+
+let a = 10;
+let b = 5;
+sum(a,b,square);
+```
 
 **8.call apply bind?**
 
