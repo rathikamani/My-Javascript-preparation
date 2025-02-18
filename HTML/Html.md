@@ -1,4 +1,4 @@
-What are the key differences between HTML and HTML5?
+**1.What are the key differences between HTML and HTML5?**
 HTML5 is an improved and more advanced version of HTML. Here are the key differences between them:
 
 1. **Doctype Declaration**  
@@ -61,7 +61,7 @@ HTML5 is an improved and more advanced version of HTML. Here are the key differe
      <meta name="viewport" content="width=device-width, initial-scale=1">
      ```
 
-What are tags in HTML5 and how many are required to make a basic web page?
+**2.What are tags in HTML5 and how many are required to make a basic web page?**
 Tags in HTML5 are elements enclosed in angle brackets (<>) that define the structure and content of a web page. HTML5 tags can be categorized into:
 
 Structural Tags (<header>, <footer>, <section>, <article>)
@@ -71,7 +71,7 @@ Interactive Tags (<button>, <form>, <input>)
 List Tags (<ul>, <ol>, <li>)
 Table Tags (<table>, <tr>, <td>)
 
-key HTML5 page structure elements?
+**3.key HTML5 page structure elements?**
 Semantic Structure Elements
 Element	Purpose
 <header>	Defines the introductory section, usually contains the logo, navigation, or heading.
@@ -81,7 +81,7 @@ Element	Purpose
 <aside>	Contains sidebar content, such as ads or related links.
 <footer>	Defines the bottom section, typically for copyrights or contact info.
 
-input elements in HTML5?
+**4.input elements in HTML5?**
 ### **Input Elements in HTML5**  
 HTML5 introduced several new `<input>` types to improve forms, user experience, and validation. Below are the key input elements:
 
@@ -162,29 +162,27 @@ HTML5 introduced several new `<input>` types to improve forms, user experience, 
 </form>
 ```
 
-web storage in HTML5?
-Web Storage in HTML5
+**6.Web Storage in HTML5**
 HTML5 introduced Web Storage to store data in the browser more efficiently than cookies. It provides two main storage types:
 
 localStorage – Stores data permanently (until manually deleted).
 sessionStorage – Stores data only for the current session (cleared when the tab is closed).
 
-three types of lists in HTML5?
-Three Types of Lists in HTML5
+**7.Three Types of Lists in HTML5**
 HTML5 provides three main types of lists to organize and display content:
 
 Ordered List (<ol>) – Numbered list
 Unordered List (<ul>) – Bulleted list
 Description List (<dl>) – Term and description list
 
-What types of graphics are supported by HTML5?
+**8.What types of graphics are supported by HTML5?**
 Types of Graphics Supported by HTML5
 HTML5 supports two main types of graphics:
 
 Canvas (<canvas>) – Used for dynamic, pixel-based drawing.
 Scalable Vector Graphics (<svg>) – Used for scalable, XML-based vector graphics.
 
-What are some of the new input types in HTML5?
+**9.What are some of the new input types in HTML5?**
 ### **New Input Types in HTML5**  
 HTML5 introduced several new `<input>` types to improve **form usability, validation, and user experience**.  
 
@@ -338,7 +336,7 @@ Drag & Drop 🖱️	Enables dragging elements	File uploads, UI interactions
 WebRTC 📹	Real-time video & audio	Video calls, live streaming
 Fullscreen 🖥️	Expands elements to full screen	Video players, gaming
 
-What are the different types of storage in HTML5?
+**10.What are the different types of storage in HTML5?**
 ### **Types of Storage in HTML5**  
 HTML5 provides several **storage mechanisms** for saving data in the browser, improving performance and user experience. The main types of storage are:  
 
@@ -436,14 +434,12 @@ caches.open("my-cache").then(cache => {
 | **IndexedDB** | Large datasets, offline storage, caching |
 | **Cache Storage** | PWA caching, storing web assets for offline use |
 
-metadata in HTML5 and how is it specified?
-Metadata in HTML5
+**11.metadata in HTML5 and how is it specified?**
 In HTML5, metadata refers to information about the web page, not content that is directly visible to users. This metadata is essential for defining the behavior of the page, influencing search engine optimization (SEO), social sharing, and page functionality.
 
 Metadata is typically specified within the <head> section of the HTML document.
 
-multimedia in HTML5?
-Multimedia in HTML5
+**12.Multimedia in HTML5**
 HTML5 introduces native support for multimedia elements, such as audio and video, making it much easier to embed and control media directly in the browser without relying on external plugins (like Flash). This improves performance, security, and compatibility across modern browsers.
 
 <audio controls>
@@ -457,16 +453,13 @@ This is a common practice for embedding third-party video players.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
 
-
-
-
-the main issues with HTML5?
+**13.The main issues with HTML5?**
 Older browsers might not support <video>, <audio>, or <canvas>.
 Certain HTML5 APIs, such as localStorage, Geolocation, and Web Workers, may not be supported by older versions of browsers.
 MP4 (H.264) is widely supported, but WebM or Ogg may not work in all browsers.
 The audio file formats (MP3, Ogg, WAV) may not work consistently across different browsers.
 
-the role of the WebSocket API in HTML5?
+**14.the role of the WebSocket API in HTML5?**
 The WebSocket API in HTML5 enables real-time, two-way communication between the browser and server over a single, persistent connection, making it ideal for applications like live chat, online gaming, and real-time notifications.
 
 What is the difference between inline, inline-block, and block? 
