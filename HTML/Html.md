@@ -64,8 +64,33 @@ HTML5 is an improved and more advanced version of HTML. Here are the key differe
 **2.What are tags in HTML5 and how many are required to make a basic web page?**
 Tags in HTML5 are elements enclosed in angle brackets (<>) that define the structure and content of a web page. HTML5 tags can be categorized into:
 
-Structural Tags (<header><footer><section><article>)
-Text Formatting Tags (<p><h1><h6><strong><em>)
+Structural Tags 
+<header>
+<footer>
+<section>
+<article>
+Text Formatting Tags 
+<p>
+<h1>
+<h6>
+<strong>
+<em>
+Media Tags
+<img>
+<audio> 
+<video>
+Interactive Tags 
+<button>
+<form>
+<input>
+List Tags
+<ul> 
+<ol>
+<li>
+Table Tags 
+<table>
+<tr>
+<td>
 
 
 
