@@ -65,33 +65,44 @@ HTML5 is an improved and more advanced version of HTML. Here are the key differe
 Tags in HTML5 are elements enclosed in angle brackets (<>) that define the structure and content of a web page. HTML5 tags can be categorized into:
 
 Structural Tags 
+```html
 <header>
 <footer>
 <section>
 <article>
+```
 Text Formatting Tags 
+```html
 <p>
 <h1>
 <h6>
 <strong>
 <em>
+```
 Media Tags
+```html
 <img>
 <audio> 
 <video>
+```
 Interactive Tags 
+```html
 <button>
 <form>
 <input>
+```
 List Tags
+```html
 <ul> 
 <ol>
 <li>
+```
 Table Tags 
+```html
 <table>
 <tr>
 <td>
-
+```
 
 
 **3.key HTML5 page structure elements?**
